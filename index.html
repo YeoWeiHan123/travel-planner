@@ -622,54 +622,8 @@
             duration: 600,
             once: true,
         });
-    </script>
-    <!-- 
-    <script>
-        function close() {
-            $("#mobile-app-dialog").hide();
-            var expires = "";
-            var date = new Date();
-            date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-            document.cookie = "mobile-app-dialog=closed" + expires + "; path=/";
-        }
-
-        function isClosed() {
-            return document.cookie.indexOf("mobile-app-dialog=closed") !== -1;
-        }
-
-        function isCookiePanelClosed() {
-            return document.cookie.indexOf("COOKIES_OPTIONS_CLOSED") !== -1;
-        }
-
-        function show(onOpen) {
-            if (!isClosed()) {
-                $("#mobile-app-dialog").css('display', 'flex');
-                $("#mobile-app-dialog-install").click(function (e) {
-                    e.preventDefault();
-                    onOpen();
-                })
-                $("#mobile-app-dialog-close").click(function (e) {
-                    e.preventDefault();
-                    close();
-                })
-            }
-        }
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
-            e.preventDefault();
-            // Stash the event so it can be triggered later.
-            if (!isClosed() && isCookiePanelClosed()) {
-                var deferredPrompt = e;
-                show(function () {
-                    deferredPrompt.prompt();
-                });
-            }
-        });
-
-    </script> -->
-
+    </script> 
+    
     <style type="text/css"
         data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
 
@@ -749,12 +703,6 @@
     </script>
 
     <script src="https://front.optimonk.com/preload-base.017a0dd3.js"></script>
-
-    <!-- <div class="react-content react-tooltip" id="portal-root" style="z-index: 0;"><div><div class="w_n5 w_n6"><div class="w_n7 w_oa"><div class="w_n8"><span>Uploaded successfully</span><div class="w_n9">Please do not close the page</div></div><div class="w_n-"><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#arrowa-usage" alt="common/arrow" class="w_f w_l w_h " style="transform: rotate(90deg);"></div></div></div></div><div class="notification-list w_oz"><div class="w_oA"><div class="w_v3"><div class="w_v6"><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#cloud-successu-usage" alt="common/cloud-success" class="w_f w_k w_F"></div><div class="w_v-">Saved</div></div></div></div></div>
-    <div class="notification-list w_oz"><div class="w_oA"><div class="w_v3"><div class="w_v6"><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#cloud-successu-usage" alt="common/cloud-success" class="w_f w_k w_F"></div><div class="w_v-">Saved</div></div></div></div>
-    <div><div class="w_E6"><div class="focus-trap-wrapper"><div aria-hidden="true" class="focus-trap-backdrop"></div><div tabindex="0" class="focus-trap"><div class="w_E7 w_sa" style="overflow-y: auto;"><div class="w_sb"><div class="w_cI w_cJ "><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#crossI-usage" alt="common/cross" class="w_f w_k w_h w_sm w_A"><div class="w_fI w_fM" style="justify-content: space-between;"><div class="w_mZ w_sc"><div class="w_fI w_sd"><img src="/client/sprites/src_app_components_components_svgIcon_icons_customsprite-a8eba9.svg#cookieja-usage" alt="custom/cookie" class="w_f w_l"><span class="w_se">Scoot uses cookies</span></div><div class="w_mZ w_sf"><span class="w_sh">When you visit our website, we may store or collect information in your browser, usually in the form of cookies. We use cookies to personalize content, measure performance, improve user experience and provide better functionality. By clicking on Accept all, you agree to the use of cookies for the above-mentioned activities. For more information on how and why we use cookies, please see our <a href="https://www.un.org/en/about-us/privacy-notice" class="w_sp w_si">Cookie Policy</a>. You can change your preferences in the Cookie settings.</span></div></div><div class="w_fI w_sj"><button class="w_du w_dC w_sk"><div class="w_vj w_vk" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;" width="103.65625" height="18"><span class="w_dn">Cookie settings</span></div></button><button class="w_du w_dx w_sl"><div class="w_vj w_vk" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;" width="66.359375" height="18"><span class="w_dn">Accept all</span></div></button></div></div></div></div></div></div></div></div>   
-    <div class="w_E6"><div class="focus-trap-wrapper"><div aria-hidden="true" class="focus-trap-backdrop"></div><div tabindex="0" class="focus-trap"><div class="w_E7 w_E9 w_vJ" style="overflow-y: hidden;"><span class="w_vK">Cookie settings</span><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#crossI-usage" alt="common/cross" class="w_f w_m w_h w_vL w_B"><div class="w_vM"><div class="w_vP"><div class="w_vT w_vV" style="--topHeight:0;"><div class="w_Lr"><span class="w_Lv">You can change your preferences in this window. For more information on how and why we use cookies, please see our Cookie Policy.</span><div class="w_Ls"><div class="w_Lt"><span>Necessary cookies</span><label class="w_Pb w_Pf w_Ph"><input type="checkbox" disabled="" checked=""><div class="w_Pc"></div><div class="w_Pd"><img src="/client/sprites/src_app_components_components_svgIcon_icons_commonsprite-24475c.svg#check-markn-usage" alt="common/check-mark" class="w_f w_m w_y"></div></label></div><span class="w_Lu">These cookies are absolutely necessary for the proper functioning of our website. Without them, our website would not work, so you cannot turn them off. Necessary cookies ensure the basic functions and security features of the website anonymously.</span></div><div class="w_Ls"><div class="w_Lt"><span>Marketing cookies</span><label class="w_Pb w_Ph"><input type="checkbox"><div class="w_Pc"></div><div class="w_Pd"></div></label></div><span class="w_Lu">We don't want to annoy our users with unwanted advertisements. We therefore use marketing cookies to deliver truly relevant ads and messages. These cookies track visitors as they browse the site and collect information to deliver tailored ads.</span></div><div class="w_Ls"><div class="w_Lt"><span>Analytics cookies</span><label class="w_Pb w_Ph"><input type="checkbox"><div class="w_Pc"></div><div class="w_Pd"></div></label></div><span class="w_Lu">These cookies help us understand how visitors use our website. They provide information about traffic and other metrics that allow us to measure and improve the performance of the website. Without these cookies, we cannot obtain information to improve site performance and the user experience of other travelers.</span></div></div></div><div class="w_vR"><div class="w_vS"><button class="w_du w_dx"><div class="w_vj w_vk" width="100.5625" height="18" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"><span class="w_dn">Save and close</span></div></button></div></div></div></div></div></div></div></div> </div> 
-    -->
     <script nomodule="" src="https://front.optimonk.com/load.498d6db8.js"></script>
     <script type="module" src="https://front.optimonk.com/load.esm/load.69e0597d.js"></script>
      
