@@ -194,7 +194,7 @@
   padding: 5px 0 7px 26px;
 }
 
-body.fb_hidden {
+.fb_hidden {
   height: 100%;
   left: 0;
   margin: 0;
